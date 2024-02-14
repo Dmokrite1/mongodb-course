@@ -1,0 +1,27 @@
+version: '3.3'
+name: 'mongo'
+
+services:
+  mongo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - mongo
+    volumes: 
+      - type: bind
+        source: "./workspace"
+        target:  "/workspace"
+      - ./init.sh:/docker-entrypoint-initdb.d/init.sh:ro
+    container_name: 'mongo-db'
+    ports:
+      - 27017:27017
+    environment:
+      PS1: '\e[92m\u\e[0m@\e[94m\h\e[0m:\e[35m\w\e[0m# '
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: test123
+      MONGO_INITDB_DATABASE: test
+
+networks:
+  mongo:
+    driver: bridge

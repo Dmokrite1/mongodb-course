@@ -1,0 +1,15 @@
+{
+  "name": "mongoose",
+  "version": "1.0.0",
+  "description": "Partie mongoose - exemples",
+  "author": "TRIPTYK",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^6.3.3"
+  },
+  "devDependencies": {
+    "express": "^4.18.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}

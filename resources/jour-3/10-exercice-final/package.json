@@ -1,0 +1,15 @@
+{
+  "name": "10-exercice-final",
+  "version": "1.0.0",
+  "description": "> GET /movies/ pour récupérer tous les films",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.12.14"
+  }
+}

@@ -1,0 +1,1 @@
+docker exec -it mongo-db /bin/bash -c "mongosh mongodb://root:test123@localhost"
